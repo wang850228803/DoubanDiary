@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wanghui.doubandiary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wanghui.doubandiary.EntryActivity"
+            android:label="@string/title_entry" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wanghui.doubandiary.OAuth2Activity"
+            android:label="@string/title_oauth2">
+        </activity>
+        <activity
+            android:name="com.wanghui.doubandiary.ItemActivity"
+            android:label="@string/title_oauth2">
+        </activity>
+        <activity
+            android:name="com.wanghui.doubandiary.MainActivity"
+            android:label="@string/title_main">
+        </activity>
+        <activity 
+            android:name="com.wanghui.doubandiary.AddDiary"
+            android:label="add diary"></activity>
+    </application>
+
+</manifest>

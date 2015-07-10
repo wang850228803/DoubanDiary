@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv1"
+        android:text ="privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <RadioGroup 
+        android:id="@+id/privacy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/public_radio"
+            android:text="public"/>
+        <RadioButton 
+            android:id="@+id/friend_radio"
+            android:text="friend"/>
+        <RadioButton
+            android:id="@+id/private_radio"
+            android:text="private"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/tv2"
+        android:text ="allow comment?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <RadioGroup 
+        android:id="@+id/can_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/yes"
+            android:text="yes"/>
+        <RadioButton 
+            android:id="@+id/no"
+            android:text="no"/>
+    </RadioGroup>
+    
+    <Button
+        android:id="@+id/submit"
+        android:text="submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
